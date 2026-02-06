@@ -1,0 +1,101 @@
+/* Cài đặt cơ bản */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif; /* Đổi font sang Arial cho giống ảnh mẫu hơn */
+            background-color: #f4f4f4;
+        }
+
+        /* Container chính màu xanh */
+        .special-section {
+            background-color: #1ea6bc;
+            color: white;
+            padding: 50px 20px; /* Tăng khoảng cách trên dưới một chút */
+            text-align: center;
+        }
+
+        /* 1. CHỈNH SỬA TIÊU ĐỀ LỚN */
+        .main-title {
+            text-transform: uppercase;
+            font-size: 24px; /* Giảm từ 28px xuống 24px */
+            margin-bottom: 40px;
+            font-weight: bold;
+            letter-spacing: 0.5px;
+        }
+
+        /* Lưới chứa 3 cột */
+        .features-container {
+            display: flex;
+            justify-content: center;
+            max-width: 1100px; /* Thu hẹp chiều ngang tổng thể lại một chút */
+            margin: 0 auto;
+            gap: 40px; /* Tăng khoảng cách giữa các cột ra */
+        }
+
+        /* Từng cột riêng lẻ */
+        .feature-item {
+            flex: 1;
+            padding: 0 10px;
+        }
+
+        /* Phần icon/hình ảnh */
+        .icon-wrapper {
+            height: 90px; /* Giảm chiều cao icon chút xíu */
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .icon-wrapper img {
+            max-height: 100%;
+            width: auto;
+        }
+        
+        /* Icon font awesome (nếu dùng) */
+        .icon-wrapper i {
+            font-size: 60px;
+            color: #ff5e5e;
+        }
+
+        /* --- CÁC PHẦN ĐIỀU CHỈNH CỠ CHỮ --- */
+
+        /* 2. CHỈNH SỬA TIÊU ĐỀ CON */
+        .feature-title {
+            font-size: 18px; /* Giảm từ 20px xuống 18px */
+            font-weight: bold;
+            margin-bottom: 12px;
+            min-height: 40px;
+            text-align: center; 
+        }
+
+        /* 3. CHỈNH SỬA ĐOẠN VĂN */
+        .feature-desc {
+            font-size: 13px; /* Giảm từ 14px xuống 13px */
+            line-height: 1.5; /* Khoảng cách dòng khít hơn (cũ là 1.6) */
+            opacity: 1; /* Để chữ trắng rõ nét, không làm mờ */
+            
+            /* Canh đều 2 bên (Justify) */
+            text-align: justify; 
+            
+            /* Dòng cuối cùng canh giữa giống ảnh mẫu */
+            text-align-last: center; 
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+            .features-container {
+                flex-direction: column;
+                align-items: center;
+                gap: 50px;
+            }
+            
+            .feature-item {
+                width: 100%;
+                padding: 0 20px;
+            }
+        }
