@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danh mục Menu</title>
+    <style>
+        /* Thiết lập chung cho toàn bộ trang */
+        body {
+            /* Cài đặt phông chữ giống hệt trong hình: Times New Roman */
+            font-family: "Times New Roman", Times, serif;
+            
+            /* Kích thước chữ là 13 như trên thanh công cụ Word (13pt) */
+            font-size: 13pt; 
+            
+            /* Màu chữ mặc định */
+            color: #000;
+            line-height: 1.5; /* Khoảng cách dòng cho dễ đọc */
+            padding: 20px;
+        }
+
+        /* Style cho các đường link (thẻ a) */
+        a {
+            text-decoration: underline; /* Gạch chân */
+            color: #0000FF; /* Màu xanh dương thuần (Standard Blue) giống Word */
+        }
+        
+        /* Hiệu ứng khi di chuột vào link (tùy chọn) */
+        a:hover {
+            color: darkblue;
+        }
+
+        /* Style cho tiêu đề (Tin tức - Sự kiện, Thể thao) */
+        h2 {
+            font-family: "Times New Roman", Times, serif;
+            color: #0000FF; /* Màu xanh dương */
+            font-size: 16pt; /* Tiêu đề thường lớn hơn chữ thường một chút */
+            font-weight: bold; /* In đậm */
+            margin-top: 20px;
+            margin-bottom: 10px;
+            text-decoration: none; /* Trong hình tiêu đề có vẻ được gạch chân ở link, tôi để mặc định link sẽ gạch chân */
+        }
+
+        /* Style cho danh sách */
+        ul {
+            list-style-type: disc; /* Dấu chấm tròn đen */
+            margin-left: 20px;
+        }
+
+        /* Style cho danh sách cấp con (thụt vào trong) */
+        ul ul {
+            list-style-type: circle; /* Dấu tròn rỗng */
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+
+        /* Khoảng cách giữa các mục li */
+        li {
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <ul>
+        <li><a href="#">TV Show</a></li>
+        <li><a href="#">Phim truyền hình</a>
+            <ul>
+                <li><a href="#">Phim Việt Nam</a></li>
+                <li><a href="#">Phim Âu - Mỹ</a></li>
+                <li><a href="#">Phim Hàn - Nhật</a></li>
+                <li><a href="#">Phim Gia Đình</a></li>
+                <li><a href="#">Phim Thần Tượng</a></li>
+                <li><a href="#">Phim Hành Động - Phiêu Lưu</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Hoạt hình</a></li>
+        <li><a href="#">Hài hước</a></li>
+        <li><a href="#">Thiếu nhi</a>
+            <ul>
+                <li><a href="#">2-6 Tuổi</a></li>
+                <li><a href="#">7-10 Tuổi</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Khoa học - Giáo dục</a></li>
+        <li><a href="#">Khác</a></li>
+    </ul>
+
+    <h2><a href="#" style="text-decoration: underline;">Tin tức - Sự kiện</a></h2>
+    <ul>
+        <li><a href="#">Thể Thao</a></li>
+        <li><a href="#">Kinh Tế</a></li>
+        <li><a href="#">Pháp Luật</a></li>
+        <li><a href="#">Chính Trị - Xã Hội</a></li>
+        <li><a href="#">Khoa Học - Công Nghệ</a></li>
+        <li><a href="#">Gia Đình - Sức Khỏe</a></li>
+    </ul>
+
+    <h2><a href="#" style="text-decoration: underline;">Thể thao</a></h2>
+    <ul>
+        <li><a href="#">Bóng Đá Việt Nam</a></li>
+        <li><a href="#">Ngoại Hạng Anh</a></li>
+        <li><a href="#">Bóng Đá Thế Giới</a></li>
+    </ul>
+
+    <ul>
+        <li><a href="#">Cộng đồng</a></li>
+    </ul>
+
+</body>
+</html>

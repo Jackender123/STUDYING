@@ -1,0 +1,83 @@
+ /* Thiết lập font và cỡ chữ 13pt theo yêu cầu */
+        body {
+            font-family: "Times New Roman", Times, serif;
+            font-size: 13pt;
+            margin: 20px;
+        }
+
+        /* Thanh menu chính màu xanh lá */
+        .navbar {
+            background-color: #008000;
+            display: flex;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            width: 100%;
+        }
+
+        .navbar > li {
+            position: relative;
+        }
+
+        .navbar > li > a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            white-space: nowrap;
+        }
+
+        /* Hiệu ứng khi chỉa chuột vào mục chính - đổi nền đỏ */
+        .navbar > li:hover > a {
+            background-color: #FF0000;
+        }
+
+        /* Khung dropdown mặc định ẩn */
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            z-index: 1000;
+            background-color: white;
+            box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+        }
+
+        /* Hiện dropdown khi hover */
+        .navbar > li:hover .dropdown-content {
+            display: block;
+        }
+
+        /* Style bảng cho tất cả các dropdown để giống mục 'Khác' */
+        .menu-table {
+            border-collapse: collapse;
+            min-width: 250px; /* Độ rộng tối thiểu cho bảng */
+            text-align: left;
+        }
+
+        .menu-table td {
+            background-color: #0000FF; /* Nền xanh dương */
+            color: white; /* Chữ trắng */
+            padding: 10px 20px;
+            border: 1px solid white; /* Viền trắng chia ô */
+            cursor: pointer;
+            white-space: nowrap;
+        }
+
+        /* Hiệu ứng khi chỉa chuột vào từng ô nội dung */
+        .menu-table td:hover {
+            background-color: #006400; /* Đổi sang xanh lá giống hình */
+        }
+
+        /* Style riêng cho bảng mục "Khác" vì nó có tiêu đề và nhiều cột */
+        .table-large {
+            min-width: 600px;
+            text-align: center;
+        }
+        
+        .menu-table th {
+            color: red;
+            background-color: #f2f2f2;
+            padding: 8px;
+            border: 1px solid #ccc;
+        }
